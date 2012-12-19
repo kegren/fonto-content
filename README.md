@@ -1,3 +1,3 @@
 #Fonto PHP Framework
 
-A small PHP framework under development
+Small application built with Fonto.
