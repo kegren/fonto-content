@@ -1,0 +1,34 @@
+/**
+ * Part of Fonto Framework
+ */
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.header {
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    border-top: 1px solid #000;
+    margin-top: 10px;
+}
+
+.blog {
+    width: 500px;
+}
+
+.fontoContainer {
+	margin: 0 auto;
+	width: 960px;
+	border-radius: 4px;
+}
+
+.fontoContainer header {
+	border-bottom: 1px solid #ddd;
+}

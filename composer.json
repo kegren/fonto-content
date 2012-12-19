@@ -1,0 +1,14 @@
+{
+	"name": "kenren/fonto",
+    "require": {
+        "php-activerecord/php-activerecord": "dev-master",
+        "hautelook/phpass": "dev-master",
+        "ezyang/htmlpurifier": "dev-master",
+        "doctrine/orm": "*"
+    },
+    "autoload": {
+    	"psr-0": {
+    		"Fonto": "vendor/fonto/fonto/src/"
+    	}
+    }
+}
