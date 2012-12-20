@@ -68,16 +68,17 @@ class Content extends Base
      */
     public function postEditAction()
     {
+        $request = $this->request();
+        $contentId = $request->getParameter('contentId');
+
         if (!$this->auth()->isAuthenticated()) {
-            return $this->response()->redirect('content/edit');
+            return $this->response()->redirect("content/edit/$contentId");
         }
 
-        $request = $this->request();
         if (!is_numeric($request->getParameter('contentId'))) {
             throw new \Exception("Something went wrong.");
         }
 
-        $contentId = $request->getParameter('contentId');
         $session = $this->session();
         $validation = $this->validation();
         $rules = new Form\Content();
