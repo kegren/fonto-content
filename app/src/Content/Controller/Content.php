@@ -105,7 +105,7 @@ class Content extends Base
             return $this->response()->redirect("content/edit/$contentId");
         } else {
             return $this->view()->render(
-                'content/edit',
+                "content/edit/$contentId",
                 $this->commonInclude() + array('validation' => $validation, 'create' => false)
             );
         }
@@ -165,7 +165,7 @@ class Content extends Base
             return $this->response()->redirect('content/new');
         } else {
             return $this->view()->render(
-                'content/edit',
+                'content/new',
                 $this->commonInclude() + array('validation' => $validation, 'create' => true)
             );
         }
